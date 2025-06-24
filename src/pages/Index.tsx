@@ -5,11 +5,11 @@ import 'aos/dist/aos.css';
 import Navbar from '@/components/Navbar';
 import EnhancedHero from '@/components/EnhancedHero';
 import About from '@/components/About';
-import EnhancedGallery from '@/components/Gallery';
+import EnhancedGallery from '@/components/EnhancedGallery';
 import EnhancedPackages from '@/components/EnhancedPackages';
 import EnhancedTestimonials from '@/components/EnhancedTestimonials';
 import EnhancedUpcomingEvents from '@/components/EnhancedUpcomingEvents';
-import WhatsAppFloat from '@/components/WhatsApp';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
 import Footer from '@/components/Footer';
 
 const Index = () => {
