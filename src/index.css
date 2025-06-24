@@ -170,3 +170,22 @@
   transform: translateY(-8px);
   box-shadow: 0 25px 50px rgba(10, 132, 255, 0.15);
 }
+
+/* Enhanced focus styles for accessibility */
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 2px solid #0A84FF;
+  outline-offset: 2px;
+}
+
+/* Custom focus ring for form elements */
+.focus\:ring-primary:focus {
+  --tw-ring-color: rgb(10 132 255 / 0.5);
+}
+
+.focus\:border-primary:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(10 132 255 / var(--tw-border-opacity));
+}

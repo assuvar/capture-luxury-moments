@@ -25,6 +25,8 @@ const Hero = () => {
       <div className="absolute inset-0 flex items-center justify-center">
         <div 
           className={`camera-lens w-96 h-96 ${isLoaded ? 'lens-animation' : 'opacity-0'}`}
+          data-aos="zoom-in"
+          data-aos-duration="2000"
         >
           <div className="absolute inset-0 flex items-center justify-center">
             <Camera className="w-24 h-24 text-white/30" />
@@ -34,24 +36,39 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
-        <h1 className={`text-6xl md:text-8xl font-thin mb-6 tracking-tight ${isLoaded ? 'text-reveal' : 'opacity-0'}`}>
-          Unfold Memories
+        <h1 
+          className="text-6xl md:text-8xl font-thin mb-6 tracking-tight text-white"
+          data-aos="fade-up"
+          data-aos-delay="800"
+          data-aos-duration="1000"
+        >
+          Where Moments Become
           <br />
-          <span className="text-gradient font-light">Like Never Before</span>
+          <span className="text-gradient font-light">Masterpieces</span>
         </h1>
         
-        <p className={`text-xl md:text-2xl text-white/70 mb-12 font-light max-w-2xl mx-auto ${isLoaded ? 'text-reveal-delayed' : 'opacity-0'}`}>
-          Luxury Photography Crafted in Vellore & Bangalore
+        <p 
+          className="text-xl md:text-2xl text-white/70 mb-12 font-light max-w-2xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="1200"
+          data-aos-duration="1000"
+        >
+          Luxury Wedding & Event Photography in Vellore & Bangalore
         </p>
 
-        <div className={`flex flex-col sm:flex-row gap-6 justify-center items-center ${isLoaded ? 'text-reveal-delayed' : 'opacity-0'}`}>
+        <div 
+          className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          data-aos="fade-up"
+          data-aos-delay="1600"
+          data-aos-duration="1000"
+        >
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105"
             onClick={() => document.getElementById('packages')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <Play className="w-5 h-5 mr-2" />
-            Check Packages
+            View Packages
           </Button>
           
           <Button 
@@ -67,7 +84,11 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div 
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        data-aos="fade-up"
+        data-aos-delay="2000"
+      >
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-bounce" />
         </div>

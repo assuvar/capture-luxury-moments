@@ -66,10 +66,19 @@ const Packages = () => {
     <section id="packages" className="py-24 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-thin mb-6 text-white">
+          <h2 
+            className="text-5xl md:text-6xl font-thin mb-6 text-white"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Choose Your <span className="text-gradient">Experience</span>
           </h2>
-          <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">
+          <p 
+            className="text-xl text-white/70 max-w-3xl mx-auto font-light"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
             From intimate moments to grand celebrations, we have the perfect package to capture your story with unparalleled elegance.
           </p>
         </div>
@@ -83,7 +92,9 @@ const Packages = () => {
                 className={`package-card relative bg-gradient-to-b from-gray-900/50 to-black border-gray-800 hover:border-primary/50 transition-all duration-300 ${
                   pkg.popular ? 'scale-105 border-primary/30' : ''
                 }`}
-                style={{ animationDelay: `${index * 0.1}s` }}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+                data-aos-duration="800"
               >
                 {pkg.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -131,7 +142,7 @@ const Packages = () => {
           })}
         </div>
 
-        <div className="text-center mt-16">
+        <div className="text-center mt-16" data-aos="fade-up" data-aos-delay="400">
           <p className="text-white/60 mb-4">Need a custom package?</p>
           <Button
             variant="outline"
