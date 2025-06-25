@@ -26,7 +26,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       title: "Royal Wedding - Priya & Arjun",
       date: "December 2024",
       category: "Wedding",
-      heroImage: "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=600&fit=crop",
+      heroImage: "https://i.postimg.cc/gcTH9KXk/post.jpg",
       images: [
         "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=800&fit=crop",
         "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1200&h=800&fit=crop",
