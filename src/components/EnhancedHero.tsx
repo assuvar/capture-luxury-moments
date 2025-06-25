@@ -83,7 +83,7 @@ const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
           <img
             src={image.src}
             alt={`Floating image ${index + 1}`}
-            className="w-full h-full object-cover rounded-2xl shadow-2xl opacity-30 hover:opacity-50 transition-opacity duration-300"
+            className="w-full h-full object-cover rounded-2xl shadow-2xl opacity-70 hover:opacity-90 transition-opacity duration-300"
           />
         </div>
       ))}
