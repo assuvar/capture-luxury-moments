@@ -187,7 +187,7 @@
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.3); /* Red glow */
   }
   50% {
-    box-shadow: 0 0 40px rgba(153, 0, 0, 0.6); /* Red glow */
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.6); /* Red glow */
   }
 }
 
@@ -272,7 +272,7 @@ input:focus,
 textarea:focus,
 select:focus,
 button:focus {
-  outline: 2px solid #f52626; /* Red outline */
+  outline: 2px solid #FF0000; /* Red outline */
   outline-offset: 2px;
 }
 

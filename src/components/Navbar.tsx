@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import logo from '/src/assests/logo.png';
+
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,7 +54,7 @@ const Navbar = () => {
           {/* Logo with Image */}
           <div className="flex-shrink-0 flex items-center space-x-2">
             <img
-              src="/src/assests/logo.png" // Make sure this path is correct; use public/logo.png for Next.js or Vite
+              src={logo} // Make sure this path is correct; use public/logo.png for Next.js or Vite
               alt="Maha Captures Logo"
               className="h-20 w-75"
             />
