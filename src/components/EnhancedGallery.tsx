@@ -50,7 +50,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       title: "Fashion Portfolio - Maya Singh",
       date: "October 2024",
       category: "Fashion",
-      heroImage: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=600&fit=crop",
+      heroImage: "https://i.postimg.cc/SKPS24r9/1C8A4163.jpg",
       images: [
         "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=1200&h=800&fit=crop",
         "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&h=800&fit=crop",
@@ -62,7 +62,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       title: "Birthday Celebration - Rajesh Family",
       date: "September 2024",
       category: "Birthday",
-      heroImage: "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=600&fit=crop",
+      heroImage: "https://i.postimg.cc/vH4JPKWY/IMG-6014.jpg",
       images: [
         "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=1200&h=800&fit=crop",
         "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=800&fit=crop",
@@ -74,7 +74,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       title: "Engagement Shoot - Kavya & Vikram",
       date: "August 2024",
       category: "Engagement",
-      heroImage: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400&h=600&fit=crop",
+      heroImage: "https://i.postimg.cc/Dz4Ny3Ym/5Q3A8831.jpg",
       images: [
         "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1200&h=800&fit=crop",
         "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1200&h=800&fit=crop",
@@ -86,7 +86,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       title: "Product Showcase - Luxury Watches",
       date: "July 2024",
       category: "Product",
-      heroImage: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=400&h=600&fit=crop",
+      heroImage: "https://i.postimg.cc/8kZ21G1B/370A5482.jpg",
       images: [
         "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=1200&h=800&fit=crop",
         "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=1200&h=800&fit=crop",

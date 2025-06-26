@@ -23,7 +23,7 @@ const About = () => {
               {/* Floating mini images */}
               <div className="absolute -top-8 -right-8 w-32 h-32 opacity-80">
                 <img
-                  src="https://images.unsplash.com/photo-1519741497674-611481863552?w=200&h=200&fit=crop"
+                  src="https://i.postimg.cc/xCjCHgDr/1C8A4182.jpg"
                   alt="Wedding moment"
                   className="w-full h-full object-cover rounded-xl shadow-lg rotate-12 hover:rotate-6 transition-transform duration-300"
                 />
@@ -31,7 +31,7 @@ const About = () => {
               
               <div className="absolute -bottom-6 -left-6 w-28 h-28 opacity-80">
                 <img
-                  src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=200&h=200&fit=crop"
+                  src="https://i.postimg.cc/rs3FBkdc/1C8A4172.jpg"
                   alt="Engagement shoot"
                   className="w-full h-full object-cover rounded-xl shadow-lg -rotate-12 hover:-rotate-6 transition-transform duration-300"
                 />
@@ -59,7 +59,7 @@ const About = () => {
               <div className="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="400">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
                 <p className="text-white/70 text-lg">
-                  Over 500+ weddings and events captured across Vellore and Bangalore
+                  Over 100+ weddings and events captured across Vellore and Bangalore
                 </p>
               </div>
               

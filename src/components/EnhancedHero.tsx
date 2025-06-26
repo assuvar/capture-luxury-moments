@@ -35,7 +35,7 @@ const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
       delay: 0,
     },
     {
-      src: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=250&h=350&fit=crop",
+      src: "https://i.postimg.cc/yN7KDdcW/5Q3A3401.jpg",
       className: "top-32 right-16 w-40 h-56",
       delay: 200,
     },
@@ -45,12 +45,12 @@ const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
       delay: 400,
     },
     {
-      src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=320&h=420&fit=crop",
+      src: "https://i.postimg.cc/Dz4Ny3Ym/5Q3A8831.jpg",
       className: "bottom-20 right-10 w-52 h-68",
       delay: 600,
     },
     {
-      src: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=200&h=300&fit=crop",
+      src: "https://i.postimg.cc/8k4ZGCPt/370A3945.jpg",
       className: "top-1/2 left-1/4 w-36 h-48",
       delay: 800,
     },
@@ -83,7 +83,7 @@ const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
           <img
             src={image.src}
             alt={`Floating image ${index + 1}`}
-            className="w-full h-full object-cover rounded-2xl shadow-2xl opacity-80 hover:opacity-90 transition-opacity duration-300"
+            className="w-full h-full object-cover rounded-2xl shadow-2xl opacity-100 hover:opacity-100 transition-opacity duration-300"
           />
         </div>
       ))}
