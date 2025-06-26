@@ -28,9 +28,9 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       category: "Wedding",
       heroImage: "https://i.postimg.cc/gcTH9KXk/post.jpg",
       images: [
-        "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1594736797933-d0bdc6bed629?w=1200&h=800&fit=crop"
+        "https://i.postimg.cc/gjsJk2zP/5Q3A7607.jpg",
+        "https://i.postimg.cc/025jXDn5/5Q3A7567.jpg",
+        "https://i.postimg.cc/yNR83P1j/5Q3A7564.jpg"
       ]
     },
     {
