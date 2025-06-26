@@ -38,7 +38,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       title: "Corporate Gala - Tech Summit",
       date: "November 2024",
       category: "Corporate",
-      heroImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=600&fit=crop",
+      heroImage: "https://i.postimg.cc/xCTN96qp/IMG-6513-1.jpg",
       images: [
         "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=800&fit=crop",
         "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200&h=800&fit=crop",

@@ -22,7 +22,7 @@ const Gallery = () => {
       title: "Royal Wedding - Priya & Arjun",
       date: "December 2024",
       category: "Wedding",
-      heroImage: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=600&fit=crop",
+      heroImage: "https://i.postimg.cc/xCTN96qp/IMG-6513-1.jpg",
       images: [
         "https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&h=800&fit=crop",
         "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1200&h=800&fit=crop",

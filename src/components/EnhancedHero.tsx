@@ -30,7 +30,7 @@ const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
 
   const floatingImages = [
     {
-      src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=300&h=400&fit=crop",
+      src: "https://i.postimg.cc/gcTH9KXk/post.jpg",
       className: "top-20 left-10 w-48 h-64",
       delay: 0,
     },
@@ -40,7 +40,7 @@ const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
       delay: 200,
     },
     {
-      src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=280&h=380&fit=crop",
+      src: "https://i.postimg.cc/4d77Kmbp/5Q3A5401.jpg",
       className: "bottom-40 left-20 w-44 h-60",
       delay: 400,
     },
@@ -83,7 +83,7 @@ const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
           <img
             src={image.src}
             alt={`Floating image ${index + 1}`}
-            className="w-full h-full object-cover rounded-2xl shadow-2xl opacity-70 hover:opacity-90 transition-opacity duration-300"
+            className="w-full h-full object-cover rounded-2xl shadow-2xl opacity-80 hover:opacity-90 transition-opacity duration-300"
           />
         </div>
       ))}
