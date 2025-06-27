@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
@@ -23,9 +22,9 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
   const galleryItems: GalleryItem[] = [
     {
       id: 1,
-      title: "Royal Wedding - Priya & Arjun",
-      date: "December 2024",
-      category: "Wedding",
+      title: "Kiran & Kalpana",
+      date: "",
+      category: "Reception",
       heroImage: "https://i.postimg.cc/gcTH9KXk/post.jpg",
       images: [
         "https://i.postimg.cc/gjsJk2zP/5Q3A7607.jpg",
@@ -35,9 +34,9 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
     },
     {
       id: 2,
-      title: "Corporate Gala - Tech Summit",
-      date: "November 2024",
-      category: "Corporate",
+      title: "Ezhil & Tamil",
+      date: "",
+      category: "Reception",
       heroImage: "https://i.postimg.cc/xCTN96qp/IMG-6513-1.jpg",
       images: [
         "https://i.postimg.cc/fRRjLm5J/IMG-6392.jpg",
@@ -47,50 +46,50 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
     },
     {
       id: 3,
-      title: "Fashion Portfolio - Maya Singh",
-      date: "October 2024",
-      category: "Fashion",
+      title: "Kannadhasan & Gayathri",
+      date: "",
+      category: "Reception",
       heroImage: "https://i.postimg.cc/SKPS24r9/1C8A4163.jpg",
       images: [
-        "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1200&h=800&fit=crop"
+        "https://i.postimg.cc/NGC971CR/5Q3A6048.jpg",
+        "https://i.postimg.cc/SKXk4Mfb/5Q3A6102.jpg",
+        "https://i.postimg.cc/155xPFy7/5Q3A6123.jpg"
       ]
     },
     {
       id: 4,
-      title: "Birthday Celebration - Rajesh Family",
-      date: "September 2024",
-      category: "Birthday",
+      title: "",
+      date: "",
+      category: "Model Potraits",
       heroImage: "https://i.postimg.cc/vH4JPKWY/IMG-6014.jpg",
       images: [
-        "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=800&fit=crop"
+        "https://i.postimg.cc/mr2fZF3g/IMG-6033.jpg",
+        "https://i.postimg.cc/3xy4WdKY/IMG-6006-Recovered.jpg",
+        "https://i.postimg.cc/3NRr6cNY/IMG-5885.jpg"
       ]
     },
     {
       id: 5,
-      title: "Engagement Shoot - Kavya & Vikram",
-      date: "August 2024",
-      category: "Engagement",
+      title: "Kanishkha",
+      date: "",
+      category: "Puberty",
       heroImage: "https://i.postimg.cc/Dz4Ny3Ym/5Q3A8831.jpg",
       images: [
-        "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1200&h=800&fit=crop"
+        "https://i.postimg.cc/HkJzHYR7/5Q3A8868.jpg",
+        "https://i.postimg.cc/nh8jjnMm/5Q3A8872.jpg",
+        "https://i.postimg.cc/Ls2JDvt6/5Q3A8857.jpg"
       ]
     },
     {
       id: 6,
-      title: "Product Showcase - Luxury Watches",
+      title: "Vicky & Deepika",
       date: "July 2024",
-      category: "Product",
+      category: "Pre Wed",
       heroImage: "https://i.postimg.cc/8kZ21G1B/370A5482.jpg",
       images: [
-        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=1200&h=800&fit=crop",
-        "https://images.unsplash.com/photo-1517242027094-631f8c218a0f?w=1200&h=800&fit=crop"
+        "https://i.postimg.cc/pVG1t6r4/370-A5330-Recovered.jpg",
+        "https://i.postimg.cc/jSN8PqcY/370A5670.jpg",
+        "https://i.postimg.cc/HxW3qwgT/370A5771.jpg"
       ]
     }
   ];
@@ -120,19 +119,10 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
     <section id="gallery" className="py-24 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2
-            className="text-5xl md:text-6xl font-thin mb-6 text-white"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
+          <h2 className="text-5xl md:text-6xl font-thin mb-6 text-white">
             Our <span className="text-gradient">Works</span>
           </h2>
-          <p
-            className="text-xl text-white/70 max-w-2xl mx-auto font-light"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
+          <p className="text-xl text-white/70 max-w-2xl mx-auto font-light">
             Every frame tells a story. Explore our portfolio of unforgettable moments captured with precision and artistry.
           </p>
         </div>
@@ -143,9 +133,6 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
               key={item.id}
               className="group cursor-pointer"
               onClick={() => openGallery(item)}
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
-              data-aos-duration="800"
             >
               <div className="relative overflow-hidden rounded-2xl bg-gray-900 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 aspect-[9/16]">
                 <img
@@ -173,9 +160,9 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
 
       {/* Gallery Modal */}
       <Dialog open={!!selectedGallery} onOpenChange={() => setSelectedGallery(null)}>
-        <DialogContent className="max-w-6xl h-[90vh] bg-black border-gray-800 p-0">
+        <DialogContent className="max-w-6xl h-[90vh] bg-black border-gray-800 p-0 overflow-hidden">
           {selectedGallery && (
-            <div className="relative h-full flex flex-col">
+            <div className="relative flex flex-col h-full overflow-hidden">
               {/* Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-800">
                 <div>
@@ -199,11 +186,11 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
               </div>
 
               {/* Image Display */}
-              <div className="flex-1 relative">
+              <div className="flex-1 relative flex items-center justify-center overflow-hidden">
                 <img
                   src={selectedGallery.images[currentImageIndex]}
                   alt={`${selectedGallery.title} - Image ${currentImageIndex + 1}`}
-                  className="w-full h-full object-contain"
+                  className="max-h-full w-auto mx-auto my-auto object-contain"
                 />
 
                 {/* Navigation */}
