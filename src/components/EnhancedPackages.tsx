@@ -13,7 +13,7 @@ const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
     {
       title: "Essential",
       price: "₹25,000",
-      duration: "4 Hours",
+      
       features: [
         "Professional Photography",
         "50+ Edited Photos",
@@ -28,7 +28,7 @@ const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
     {
       title: "Premium",
       price: "₹45,000",
-      duration: "6 Hours",
+      duration: "",
       features: [
         "Premium Photography & Videography",
         "100+ Edited Photos",
@@ -45,7 +45,7 @@ const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
     {
       title: "Signature",
       price: "₹75,000",
-      duration: "Full Day",
+      duration: "",
       features: [
         "Luxury Photography & Videography",
         "200+ Edited Photos",
