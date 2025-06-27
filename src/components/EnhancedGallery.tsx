@@ -83,7 +83,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
     {
       id: 6,
       title: "Vicky & Deepika",
-      date: "July 2024",
+      date: "",
       category: "Pre Wed",
       heroImage: "https://i.postimg.cc/8kZ21G1B/370A5482.jpg",
       images: [

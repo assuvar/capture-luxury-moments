@@ -42,28 +42,7 @@ const EnhancedUpcomingEvents = ({ onBookNowClick }: EnhancedUpcomingEventsProps)
       status: "Open",
       description: "High-fashion photography for emerging models"
     },
-    {
-      id: 4,
-      title: "Birthday Celebration - Aditi",
-      location: "Vellore Garden Resort",
-      date: "February 12, 2025",
-      time: "6:00 PM",
-      type: "Birthday",
-      image: "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=600&h=400&fit=crop",
-      status: "Open",
-      description: "Making special moments even more memorable"
-    },
-    {
-      id: 5,
-      title: "Engagement Shoot - Sneha & Karthik",
-      location: "Lalbagh Botanical Garden",
-      date: "February 20, 2025",
-      time: "5:00 PM",
-      type: "Engagement",
-      image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=400&fit=crop",
-      status: "Open",
-      description: "Love stories captured in nature's beauty"
-    }
+   
   ];
 
   const getStatusColor = (status: string) => {
