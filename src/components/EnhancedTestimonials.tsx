@@ -13,7 +13,7 @@ const EnhancedTestimonials = () => {
       name: "Priya & Arjun",
       event: "Wedding",
       rating: 5,
-      text: "MahaCaptures turned our special day into a cinematic masterpiece. Every emotion, every detail was captured with such precision and artistry. The team's professionalism and creativity exceeded all our expectations.",
+      text: "Excellent team !! They made my special day tooo special at each and every captures. Entire team worked very hard to capture every moment.. also entire team was very patient in capturing all the right shots as they not even missed the single shot also the pictures came out so stunning. If anyone really seeking for the best photography i will really recommend MAHA CAPTURES for you.",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face"
     },
     {

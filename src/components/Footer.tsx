@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Camera, MapPin, Phone, Mail, Instagram, Facebook, Youtube } from 'lucide-react';
 
@@ -27,7 +26,7 @@ const Footer = () => {
               we specialize in capturing life's most precious moments with unparalleled elegance and style.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-white/10 hover:bg-primary/20 p-3 rounded-full transition-colors duration-300">
+              <a href="https://www.instagram.com/mahacaptures2024/" className="bg-white/10 hover:bg-primary/20 p-3 rounded-full transition-colors duration-300">
                 <Instagram className="w-5 h-5 text-white" />
               </a>
               <a href="#" className="bg-white/10 hover:bg-primary/20 p-3 rounded-full transition-colors duration-300">
@@ -66,7 +65,7 @@ const Footer = () => {
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-primary mr-3" />
                 <a href="tel:+919876543210" className="text-white/70 hover:text-primary transition-colors duration-300">
-                  +91 98765 43210
+                  +91 9585966522
                 </a>
               </div>
               <div className="flex items-center">
@@ -81,10 +80,21 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/60 text-sm">
-            © {currentYear} MahaCaptures. All rights reserved.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <div className="text-white/60 text-sm text-center md:text-left">
+            <p>© {currentYear} MahaCaptures. All rights reserved.</p>
+            <p className="mt-2">
+              Website crafted by{' '}
+              <a
+                href="https://assuvar.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                Assuvar 
+              </a>
+            </p>
+          </div>
+          <div className="flex space-x-6 mt-6 md:mt-0">
             <a href="#" className="text-white/60 hover:text-primary text-sm transition-colors duration-300">Privacy Policy</a>
             <a href="#" className="text-white/60 hover:text-primary text-sm transition-colors duration-300">Terms of Service</a>
             <a href="#" className="text-white/60 hover:text-primary text-sm transition-colors duration-300">Cookie Policy</a>

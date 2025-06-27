@@ -138,7 +138,7 @@ const UpcomingEvents = () => {
                             const message = encodeURIComponent(
                               `Hi MahaCaptures, I'm interested in booking a session on ${event.date} in ${event.location}. Please share availability and packages.`
                             );
-                            window.open(`https://wa.me/+919876543210?text=${message}`, '_blank');
+                           window.open(`https://wa.me/+919585966522?text=${message}`, '_blank');
                           }}
                           className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105"
                         >

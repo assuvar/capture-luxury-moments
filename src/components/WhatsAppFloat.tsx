@@ -59,7 +59,7 @@ Please share more details and package options. Thank you!`;
 
   const quickWhatsApp = () => {
     const message = encodeURIComponent("Hi MahaCaptures, I'm interested in your photography services. Please share more details.");
-    window.open(`https://wa.me/+919876543210?text=${message}`, '_blank');
+   window.open(`https://wa.me/+919585966522?text=${message}`, '_blank');
   };
 
   return (

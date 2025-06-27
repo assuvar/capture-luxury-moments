@@ -1,13 +1,8 @@
-
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 
-interface EnhancedHeroProps {
-  onBookNowClick: () => void;
-}
-
-const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
+const EnhancedHero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -27,6 +22,20 @@ const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
+
+  const scrollToSection = (id: string) => {
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const openWhatsApp = () => {
+    const message = encodeURIComponent(
+      "Hi MahaCaptures, I'm interested in booking a photography session. Please share more details."
+    );
+    window.open(`https://wa.me/919585966522?text=${message}`, '_blank');
+  };
 
   const floatingImages = [
     {
@@ -57,10 +66,7 @@ const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
   ];
 
   const scrollToNext = () => {
-    const aboutSection = document.querySelector('#about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    scrollToSection('about');
   };
 
   return (
@@ -69,14 +75,10 @@ const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
       {floatingImages.map((image, index) => (
         <div
           key={index}
-          className={`absolute ${image.className} opacity-0 ${
-            isLoaded ? 'animate-fade-in' : ''
-          }`}
+          className={`absolute ${image.className} opacity-0 ${isLoaded ? 'animate-fade-in' : ''}`}
           style={{
             animationDelay: `${image.delay}ms`,
-            transform: `translate(${mousePosition.x * 20}px, ${mousePosition.y * 15}px) scale(${
-              1 + Math.sin(Date.now() * 0.001 + index) * 0.05
-            })`,
+            transform: `translate(${mousePosition.x * 20}px, ${mousePosition.y * 15}px) scale(${1 + Math.sin(Date.now() * 0.001 + index) * 0.05})`,
             transition: 'transform 0.3s ease-out',
           }}
         >
@@ -121,7 +123,7 @@ const EnhancedHero = ({ onBookNowClick }: EnhancedHeroProps) => {
         >
           <Button
             size="lg"
-            onClick={onBookNowClick}
+            onClick={openWhatsApp}
             className="bg-primary hover:bg-primary/90 text-white px-12 py-6 text-xl rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/25"
           >
             Book via WhatsApp

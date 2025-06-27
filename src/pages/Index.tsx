@@ -32,21 +32,21 @@ const Index = () => {
     const message = encodeURIComponent(
       `Hi MahaCaptures, I'm interested in the ${packageTitle} package (${price}). Please share more details and availability.`
     );
-    window.open(`https://wa.me/+919876543210?text=${message}`, '_blank');
+   window.open(`https://wa.me/+919585966522?text=${message}`, '_blank');
   };
 
   const handleEventBooking = (eventDate: string, location: string) => {
     const message = encodeURIComponent(
       `Hi MahaCaptures, I'm interested in booking a session on ${eventDate} in ${location}. Please share availability and packages.`
     );
-    window.open(`https://wa.me/+919876543210?text=${message}`, '_blank');
+   window.open(`https://wa.me/+919585966522?text=${message}`, '_blank');
   };
 
   const handleGalleryBooking = () => {
     const message = encodeURIComponent(
       "Hi MahaCaptures, I'm interested in booking a similar photography session. Please share more details and packages."
     );
-    window.open(`https://wa.me/+919876543210?text=${message}`, '_blank');
+   window.open(`https://wa.me/+919585966522?text=${message}`, '_blank');
   };
 
   return (

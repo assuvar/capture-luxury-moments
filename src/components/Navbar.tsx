@@ -35,7 +35,7 @@ const Navbar = () => {
   };
 
   const handleBookNowClick = () => {
-    const phoneNumber = '919876543210'; // Replace with your WhatsApp number (no + or spaces)
+    const phoneNumber = '919585966522'; // Replace with your WhatsApp number (no + or spaces)
     const message = encodeURIComponent('Hi! I would like to book a session with Maha Captures.');
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');

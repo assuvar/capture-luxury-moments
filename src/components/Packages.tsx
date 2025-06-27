@@ -59,7 +59,7 @@ const Packages = () => {
     const message = encodeURIComponent(
       `Hi MahaCaptures, I'm interested in the ${packageTitle} package (${price}). Please share more details and availability.`
     );
-    window.open(`https://wa.me/+919876543210?text=${message}`, '_blank');
+    window.open(`https://wa.me/+919585966522?text=${message}`, '_blank');
   };
 
   return (
@@ -151,7 +151,7 @@ const Packages = () => {
               const message = encodeURIComponent(
                 "Hi MahaCaptures, I need a custom photography package. Can we discuss my requirements?"
               );
-              window.open(`https://wa.me/+919876543210?text=${message}`, '_blank');
+              window.open(`https://wa.me/+919585966522?text=${message}`, '_blank');
             }}
           >
             <Users className="w-5 h-5 mr-2" />
