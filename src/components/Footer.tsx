@@ -85,12 +85,12 @@ const Footer = () => {
             <p className="mt-2">
               Website crafted by{' '}
               <a
-                href="https://assuvar.com"
+                href="https://"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
               >
-                Assuvar 
+               
               </a>
             </p>
           </div>
