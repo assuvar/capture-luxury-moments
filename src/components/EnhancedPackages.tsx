@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Check, Camera, Clock, Image, Users, Palette, Sparkles } from 'lucide-react';
+import { Check, Camera, Clock, Users, Palette, Sparkles } from 'lucide-react';
 
 interface EnhancedPackagesProps {
   onBookNowClick: (packageTitle: string, price: string) => void;
@@ -11,15 +10,18 @@ interface EnhancedPackagesProps {
 const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
   const packages = [
     {
-      title: "Essential",
-      price: "₹25,000",
-      
+      title: "Standard",
+      price: "₹79,999",
       features: [
-        "Professional Photography",
-        "50+ Edited Photos",
-        "Digital Gallery Access",
-        "Basic Color Grading",
-        "WhatsApp Support"
+        "Traditional photographer x 4",
+        "Traditional videographer x 2",
+        "Candid photographer x 1",
+        "Dronography x 1",
+        "64 GB pendrive",
+        "Reels - 1 video",
+        "Premium album - 2 (30 sheets)",
+        "Traditional video - 1hr x 2",
+        "12x18 Frame - 1"
       ],
       icon: Camera,
       popular: false,
@@ -27,34 +29,45 @@ const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
     },
     {
       title: "Premium",
-      price: "₹45,000",
-      duration: "",
+      price: "₹1,79,999",
       features: [
-        "Premium Photography & Videography",
-        "100+ Edited Photos",
-        "Same Day Highlights",
-        "Advanced Color Grading",
-        "Drone Coverage (if applicable)",
-        "Physical Photo Album",
-        "24/7 Support"
+        "Traditional photographer x 6",
+        "Traditional videographer x 4",
+        "Candid photographer x 2",
+        "Candid videographer x 1",
+        "Dronography x 1",
+        "LED wall x 2",
+        "Pre-wed photography & videography",
+        "128 GB pendrive",
+        "Reels - 2 videos",
+        "Song - 1",
+        "Premium album - 4 (30 sheets)",
+        "Traditional video - 2hr x 2",
+        "20x30 Frame - 1",
+        "12x18 Frame - 2"
       ],
       icon: Sparkles,
       popular: true,
       gradient: "from-primary/20 to-blue-600/20"
     },
     {
-      title: "Signature",
-      price: "₹75,000",
-      duration: "",
+      title: "Elite",
+      price: "₹2,99,999",
       features: [
-        "Luxury Photography & Videography",
-        "200+ Edited Photos",
-        "4K Video Production",
-        "Premium Color Grading",
-        "Drone & 360° Coverage",
-        "Designer Photo Album",
-        "Same Day Preview",
-        "Dedicated Support Team"
+        "Traditional photographer x 6",
+        "Traditional videographer x 6",
+        "Candid photographer x 2",
+        "Candid videographer x 1",
+        "Dronography x 3",
+        "LED wall x 2",
+        "Pre-wed photography & videography",
+        "128 GB pendrive",
+        "Reels - 4 videos",
+        "Song - 2",
+        "Premium album - 6 (30 sheets)",
+        "Traditional video - 2hr x 2",
+        "20x30 Frame - 4",
+        "12x18 Frame - 4"
       ],
       icon: Palette,
       popular: false,
@@ -115,7 +128,7 @@ const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
                     <div className="text-5xl font-bold text-gradient mb-3">{pkg.price}</div>
                     <div className="flex items-center justify-center text-white/70">
                       <Clock className="w-5 h-5 mr-2" />
-                      {pkg.duration}
+                      {/* Optional: delivery timeline */}
                     </div>
                   </div>
 
