@@ -20,29 +20,7 @@ const EnhancedUpcomingEvents = ({ onBookNowClick }: EnhancedUpcomingEventsProps)
       status: "Confirmed",
       description: "A grand celebration of love in the heart of Vellore"
     },
-    {
-      id: 2,
-      title: "Corporate Annual Meet - Infosys",
-      location: "Bangalore Convention Center",
-      date: "January 22, 2025",
-      time: "2:00 PM",
-      type: "Corporate",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop",
-      status: "Confirmed",
-      description: "Capturing the innovation and energy of the tech industry"
-    },
-    {
-      id: 3,
-      title: "Fashion Week Portfolio Shoot",
-      location: "Studio Bangalore",
-      date: "February 5, 2025",
-      time: "11:00 AM",
-      type: "Fashion",
-      image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&h=400&fit=crop",
-      status: "Open",
-      description: "High-fashion photography for emerging models"
-    },
-   
+  
   ];
 
   const getStatusColor = (status: string) => {
