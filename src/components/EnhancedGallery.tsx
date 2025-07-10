@@ -189,7 +189,7 @@ const videoClips: VideoItem[] = [
      
      
           <h2 className="text-5xl md:text-6xl font-thin mb-6 text-white">
-            Our  <span className="text-gradient">inematic videos</span>
+            Our  <span className="text-gradient">Cinematic videos</span>
           </h2>
           
          
