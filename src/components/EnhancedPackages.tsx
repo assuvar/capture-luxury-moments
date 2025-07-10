@@ -2,13 +2,15 @@ import React, { useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Camera, Clock, Users, Palette, Sparkles } from 'lucide-react';
+import bgm from '/src/assests/bgm.mp3';
+
 
 const EnhancedPackages = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     // ✅ Correct path - make sure the file is in public/src/assets
-    audioRef.current = new Audio('/public/bgm.mp3');
+    audioRef.current = new Audio(bgm);
     audioRef.current.load();
   }, []);
 
