@@ -8,7 +8,7 @@ const EnhancedPackages = () => {
 
   useEffect(() => {
     // ✅ Correct path - make sure the file is in public/src/assets
-    audioRef.current = new Audio('/src/assests/bgm.mp3');
+    audioRef.current = new Audio('/public/bgm.mp3');
     audioRef.current.load();
   }, []);
 
