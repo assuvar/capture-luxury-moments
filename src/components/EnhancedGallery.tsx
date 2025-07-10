@@ -11,6 +11,12 @@ interface GalleryItem {
   images: string[];
 }
 
+interface VideoItem {
+  id: string;
+  title: string;
+  filePath: string;
+}
+
 interface EnhancedGalleryProps {
   onBookNowClick: () => void;
 }
@@ -22,75 +28,93 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
   const galleryItems: GalleryItem[] = [
     {
       id: 1,
-      title: "Kiran & Kalpana",
-      date: "",
-      category: "Reception",
-      heroImage: "https://i.postimg.cc/gcTH9KXk/post.jpg",
+      title: 'Kiran & Kalpana',
+      date: '',
+      category: 'Reception',
+      heroImage: 'https://i.postimg.cc/gcTH9KXk/post.jpg',
       images: [
-        "https://i.postimg.cc/gjsJk2zP/5Q3A7607.jpg",
-        "https://i.postimg.cc/025jXDn5/5Q3A7567.jpg",
-        "https://i.postimg.cc/yNR83P1j/5Q3A7564.jpg"
+        'https://i.postimg.cc/gjsJk2zP/5Q3A7607.jpg',
+        'https://i.postimg.cc/025jXDn5/5Q3A7567.jpg',
+        'https://i.postimg.cc/yNR83P1j/5Q3A7564.jpg'
       ]
     },
     {
       id: 2,
-      title: "Ezhil & Tamil",
-      date: "",
-      category: "Reception",
-      heroImage: "https://i.postimg.cc/xCTN96qp/IMG-6513-1.jpg",
+      title: 'Ezhil & Tamil',
+      date: '',
+      category: 'Reception',
+      heroImage: 'https://i.postimg.cc/xCTN96qp/IMG-6513-1.jpg',
       images: [
-        "https://i.postimg.cc/fRRjLm5J/IMG-6392.jpg",
-        "https://i.postimg.cc/y82gHZGq/IMG-6442.jpg",
-        "https://i.postimg.cc/vHqx0jLZ/IMG-6401.jpg"
+        'https://i.postimg.cc/fRRjLm5J/IMG-6392.jpg',
+        'https://i.postimg.cc/y82gHZGq/IMG-6442.jpg',
+        'https://i.postimg.cc/vHqx0jLZ/IMG-6401.jpg'
       ]
     },
     {
       id: 3,
-      title: "Kannadhasan & Gayathri",
-      date: "",
-      category: "Reception",
-      heroImage: "https://i.postimg.cc/SKPS24r9/1C8A4163.jpg",
+      title: 'Kannadhasan & Gayathri',
+      date: '',
+      category: 'Reception',
+      heroImage: 'https://i.postimg.cc/SKPS24r9/1C8A4163.jpg',
       images: [
-        "https://i.postimg.cc/NGC971CR/5Q3A6048.jpg",
-        "https://i.postimg.cc/SKXk4Mfb/5Q3A6102.jpg",
-        "https://i.postimg.cc/155xPFy7/5Q3A6123.jpg"
+        'https://i.postimg.cc/NGC971CR/5Q3A6048.jpg',
+        'https://i.postimg.cc/SKXk4Mfb/5Q3A6102.jpg',
+        'https://i.postimg.cc/155xPFy7/5Q3A6123.jpg'
       ]
     },
     {
       id: 4,
-      title: "",
-      date: "",
-      category: "Model Potraits",
-      heroImage: "https://i.postimg.cc/vH4JPKWY/IMG-6014.jpg",
+      title: '',
+      date: '',
+      category: 'Model Potraits',
+      heroImage: 'https://i.postimg.cc/vH4JPKWY/IMG-6014.jpg',
       images: [
-        "https://i.postimg.cc/mr2fZF3g/IMG-6033.jpg",
-        "https://i.postimg.cc/3xy4WdKY/IMG-6006-Recovered.jpg",
-        "https://i.postimg.cc/3NRr6cNY/IMG-5885.jpg"
+        'https://i.postimg.cc/mr2fZF3g/IMG-6033.jpg',
+        'https://i.postimg.cc/3xy4WdKY/IMG-6006-Recovered.jpg',
+        'https://i.postimg.cc/3NRr6cNY/IMG-5885.jpg'
       ]
     },
     {
       id: 5,
-      title: "Kanishkha",
-      date: "",
-      category: "Puberty",
-      heroImage: "https://i.postimg.cc/Dz4Ny3Ym/5Q3A8831.jpg",
+      title: 'Kanishkha',
+      date: '',
+      category: 'Puberty',
+      heroImage: 'https://i.postimg.cc/Dz4Ny3Ym/5Q3A8831.jpg',
       images: [
-        "https://i.postimg.cc/HkJzHYR7/5Q3A8868.jpg",
-        "https://i.postimg.cc/nh8jjnMm/5Q3A8872.jpg",
-        "https://i.postimg.cc/Ls2JDvt6/5Q3A8857.jpg"
+        'https://i.postimg.cc/HkJzHYR7/5Q3A8868.jpg',
+        'https://i.postimg.cc/nh8jjnMm/5Q3A8872.jpg',
+        'https://i.postimg.cc/Ls2JDvt6/5Q3A8857.jpg'
       ]
     },
     {
       id: 6,
-      title: "Vicky & Deepika",
-      date: "",
-      category: "Pre Wed",
-      heroImage: "https://i.postimg.cc/8kZ21G1B/370A5482.jpg",
+      title: 'Vicky & Deepika',
+      date: '',
+      category: 'Pre Wed',
+      heroImage: 'https://i.postimg.cc/8kZ21G1B/370A5482.jpg',
       images: [
-        "https://i.postimg.cc/pVG1t6r4/370-A5330-Recovered.jpg",
-        "https://i.postimg.cc/jSN8PqcY/370A5670.jpg",
-        "https://i.postimg.cc/HxW3qwgT/370A5771.jpg"
+        'https://i.postimg.cc/pVG1t6r4/370-A5330-Recovered.jpg',
+        'https://i.postimg.cc/jSN8PqcY/370A5670.jpg',
+        'https://i.postimg.cc/HxW3qwgT/370A5771.jpg'
       ]
+    }
+  ];
+
+  const videoClips: VideoItem[] = [
+    {
+      id: 'vid1',
+      title: 'Wedding Highlights',
+      filePath: '/src/assests/video.mp4'
+    },
+    {
+      id: 'vid2',
+      title: 'Reception Recap',
+      filePath: '/src/assests/video3.mp4'
+    },
+    {
+      id: 'vid3',
+      title: 'Engagement Moments',
+      filePath: '/src/assests/video2.mp4'
     }
   ];
 
@@ -127,8 +151,9 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {galleryItems.map((item, index) => (
+        {/* Image Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+          {galleryItems.map((item) => (
             <div
               key={item.id}
               className="group cursor-pointer"
@@ -153,6 +178,28 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
                   </p>
                 </div>
               </div>
+            </div>
+          ))}
+        </div>
+     
+     
+          <h2 className="text-5xl md:text-6xl font-thin mb-6 text-white">
+            Our <span className="text-gradient">videos</span>
+          </h2>
+          
+         
+        
+
+        {/* Video Clips */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {videoClips.map((clip) => (
+            <div key={clip.id} className="relative overflow-hidden rounded-2xl bg-gray-800">
+              <video
+                src={clip.filePath}
+                controls
+                className="w-full h-full object-cover aspect-video rounded-2xl"
+              />
+              <div className="p-4 bg-black text-white text-sm font-medium">{clip.title}</div>
             </div>
           ))}
         </div>
