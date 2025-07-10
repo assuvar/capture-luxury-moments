@@ -30,7 +30,7 @@ const About = () => {
 
               <div className="absolute -bottom-6 -left-6 w-28 h-28 opacity-80">
                 <img
-                  src="https://i.postimg.cc/rs3FBkdc/1C8A4172.jpg"
+                  src=""
                   alt="Engagement shoot"
                   className="w-full h-full object-cover rounded-xl shadow-lg -rotate-12 hover:-rotate-6 transition-transform duration-300"
                 />

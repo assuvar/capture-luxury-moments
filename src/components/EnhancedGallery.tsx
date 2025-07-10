@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import video1 from '/src/assests/video.mp4';
+import video2 from '/src/assests/video2.mp4';
+import video3 from '/src/assests/video3.mp4';
+
 
 interface GalleryItem {
   id: number;
@@ -100,23 +104,24 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
     }
   ];
 
-  const videoClips: VideoItem[] = [
-    {
-      id: 'vid1',
-      title: 'Wedding Highlights',
-      filePath: '/src/assests/video.mp4'
-    },
-    {
-      id: 'vid2',
-      title: 'Reception Recap',
-      filePath: '/src/assests/video3.mp4'
-    },
-    {
-      id: 'vid3',
-      title: 'Engagement Moments',
-      filePath: '/src/assests/video2.mp4'
-    }
-  ];
+const videoClips: VideoItem[] = [
+  {
+    id: 'vid1',
+    title: 'Wedding Highlights',
+    filePath: video1
+  },
+  {
+    id: 'vid2',
+    title: 'Reception Recap',
+    filePath: video3
+  },
+  {
+    id: 'vid3',
+    title: 'Engagement Moments',
+    filePath: video2
+  }
+];
+
 
   const openGallery = (gallery: GalleryItem) => {
     setSelectedGallery(gallery);
