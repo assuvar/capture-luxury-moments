@@ -128,7 +128,7 @@ const EnhancedTestimonials = () => {
                       </div>
 
                       {/* Quote */}
-                      <blockquote className="text-2xl md:text-4xl font-light text-white/90 mb-10 leading-relaxed italic">
+                      <blockquote className="text md:text-2xl font-light text-white/90 mb-10 leading-relaxed ">
                         "{testimonial.text}"
                       </blockquote>
 
