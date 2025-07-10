@@ -26,7 +26,7 @@ const EnhancedHero = () => {
 
   useEffect(() => {
     // ✅ Correct audio path - file must be in /public/sounds/
-    audioRef.current = new Audio('/src/assests/bgm.mp3');
+    audioRef.current = new Audio('/src/assets/bgm.mp3');
     audioRef.current.load();
   }, []);
 

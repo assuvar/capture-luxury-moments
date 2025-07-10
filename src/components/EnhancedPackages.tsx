@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Camera, Clock, Users, Palette, Sparkles } from 'lucide-react';
-import bgm from '/src/assests/bgm.mp3';
+import bgm from '/src/assets/bgm.mp3';
 
 
 const EnhancedPackages = () => {

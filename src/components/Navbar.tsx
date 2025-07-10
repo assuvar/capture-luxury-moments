@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import logo from '/src/assests/logo.png';
+import logo from '/src/assets/logo.png';
 
 
 const Navbar = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutVideo from '/src/assests/video.mp4'; // Adjust path if different
+import aboutVideo from '/src/assets/video.mp4'; // Adjust path if different
 
 const About = () => {
   return (

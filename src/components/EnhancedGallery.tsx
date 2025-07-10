@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
-import video1 from '/src/assests/video.mp4';
-import video2 from '/src/assests/video2.mp4';
-import video3 from '/src/assests/video3.mp4';
+import video1 from '/src/assets/video.mp4';
+import video2 from '/src/assets/video2.mp4';
+import video3 from '/src/assets/video3.mp4';
 
 
 interface GalleryItem {
