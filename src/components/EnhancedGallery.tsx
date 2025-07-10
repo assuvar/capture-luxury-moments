@@ -101,21 +101,21 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
   ];
 
   const videoClips: VideoItem[] = [
-      {
-    id: 'vid1',
-    title: 'Wedding Highlights',
-    filePath: '/videos/video.mp4'
-  },
-  {
-    id: 'vid2',
-    title: 'Reception Recap',
-    filePath: '/videos/video3.mp4'
-  },
-  {
-    id: 'vid3',
-    title: 'Engagement Moments',
-    filePath: '/videos/video2.mp4'
-  }
+    {
+      id: 'vid1',
+      title: 'Wedding Highlights',
+      filePath: '/src/assests/video.mp4'
+    },
+    {
+      id: 'vid2',
+      title: 'Reception Recap',
+      filePath: '/src/assests/video3.mp4'
+    },
+    {
+      id: 'vid3',
+      title: 'Engagement Moments',
+      filePath: '/src/assests/video2.mp4'
+    }
   ];
 
   const openGallery = (gallery: GalleryItem) => {
@@ -184,7 +184,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
      
      
           <h2 className="text-5xl md:text-6xl font-thin mb-6 text-white">
-            Our  <span className="text-gradient">Cinematic videos</span>
+            Our  <span className="text-gradient">inematic videos</span>
           </h2>
           
          
