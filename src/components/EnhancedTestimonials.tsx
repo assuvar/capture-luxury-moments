@@ -9,42 +9,43 @@ const EnhancedTestimonials = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const testimonials = [
-    {
-      name: "Priya & Arjun",
-      event: "Wedding",
-      rating: 5,
-      text: "Excellent team !! They made my special day tooo special at each and every captures. Entire team worked very hard to capture every moment.. also entire team was very patient in capturing all the right shots as they not even missed the single shot also the pictures came out so stunning. If anyone really seeking for the best photography i will really recommend MAHA CAPTURES for you.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-      name: "Rajesh Kumar",
-      event: "Corporate Event",
-      rating: 5,
-      text: "Outstanding photography service for our tech summit. The team captured the energy and innovation of our event perfectly. The final deliverables were beyond professional quality.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-      name: "Maya Singh",
-      event: "Fashion Portfolio",
-      rating: 5,
-      text: "Working with MahaCaptures was an absolute dream. They understood my vision perfectly and created stunning portfolio shots that have elevated my modeling career.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-      name: "Kavya & Vikram",
-      event: "Engagement",
-      rating: 5,
-      text: "The engagement shoot was magical! They made us feel so comfortable and natural. The photos perfectly captured our love story and the beautiful locations in Bangalore.",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-      name: "Anitha Reddy",
-      event: "Birthday Celebration",
-      rating: 5,
-      text: "MahaCaptures made our daughter's birthday celebration unforgettable. The attention to detail and the candid moments they captured will be treasured forever.",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face"
-    }
-  ];
+  {
+    name: "Santhosh S (Shakthi)",
+    event: "Wedding",
+    rating: 5,
+    text: "Exceptional team! The coordination was amazing! We were delighted with the outcome of the album and videos. Special thanks to Mr. Vishnu for patiently guiding us and being accommodative. Very happy to have chosen Maha Captures!",
+
+  },
+  {
+    name: "Jagannathan R",
+    event: "Puberty Function",
+    rating: 5,
+    text: "Studio Maha Captures has the best team of photographers. They were so friendly and polite. Special thanks to Mr. Vishnu for those candid shots. I will definitely recommend to my friends and family!",
+
+  },
+  {
+    name: "Preetha Ravichandran",
+    event: "Birthday Party",
+    rating: 5,
+    text: "Vishnu & team clicked a few candid shots of my son. I'm so impressed! The pictures are absolutely beautiful—every smile and little moment was captured so perfectly. Thank you for these precious memories!",
+   
+  },
+  {
+    name: "Sivasankari Selvaraj",
+    event: "Family Wedding",
+    rating: 5,
+    text: "Exceptional pictures! We had an opportunity to take some unique pictures of my baby boy. They came out as life-long memories, which I call signature moments. Thank you Maha Captures!",
+
+  },
+  {
+    name: "MDhivya 016",
+    event: "Wedding",
+    rating: 5,
+    text: "Extremely happy with the stunning pictures! Every shot is beautifully framed and full of life. These candid pics are very special to me. Thank you so much Maha Captures team!",
+    
+  }
+];
+
 
   useEffect(() => {
     if (!isAutoPlaying) return;
@@ -135,7 +136,7 @@ const EnhancedTestimonials = () => {
                       <div className="flex items-center justify-center">
                         <div className="relative">
                           <img
-                            src={testimonial.image}
+                          
                             alt={testimonial.name}
                             className="w-20 h-20 rounded-full object-cover mr-6 ring-4 ring-primary/20"
                           />

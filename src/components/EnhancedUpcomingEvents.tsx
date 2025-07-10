@@ -11,12 +11,12 @@ const EnhancedUpcomingEvents = ({ onBookNowClick }: EnhancedUpcomingEventsProps)
   const events = [
     {
       id: 1,
-      title: "Luxury Wedding - Meenakshi & Arun",
+      title: " Dr. A.R. Sivanandhini, MBBS & Er.M.Ram, B.Tech",
       location: "Vellore Palace Resort",
-      date: "January 15, 2025",
-      time: "10:00 AM",
+      date: "July 13, 2025",
+      time: "11:30 AM",
       type: "Wedding",
-      image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=400&fit=crop",
+      image: "https://i.postimg.cc/1tZLG8DR/Whats-App-Image-2025-07-10-at-12-00-58-fa55ae05.jpg://i.postimg.cc/L6T6npKZ/Whats-App-Image-2025-07-10-at-12-00-58-e58ae1d4.jpg",
       status: "Confirmed",
       description: "A grand celebration of love in the heart of Vellore"
     },

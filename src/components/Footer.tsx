@@ -71,7 +71,7 @@ const Footer = () => {
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-primary mr-3" />
                 <a href="mailto:hello@mahacaptures.com" className="text-white/70 hover:text-primary transition-colors duration-300">
-                  hello@mahacaptures.com
+                  Mahacaptures2024@gmail.com
                 </a>
               </div>
             </div>
@@ -80,19 +80,19 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-white/60 text-sm text-center md:text-left">
-            <p>© {currentYear} MahaCaptures. All rights reserved.</p>
-            <p className="mt-2">
-              Website crafted by{' '}
-              <a
-                href="https://"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-               
-              </a>
-            </p>
+  <div className="text-white/60 text-sm text-center md:text-left">
+    <p>© {currentYear} MahaCaptures. All rights reserved.</p>
+    <p className="mt-5 h-2">
+      Website crafted by{' '}
+      <a
+        href="https://assuvar.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary hover:underline"
+      >
+        Assuvar
+      </a>
+    </p>
           </div>
           <div className="flex space-x-6 mt-6 md:mt-0">
             <a href="#" className="text-white/60 hover:text-primary text-sm transition-colors duration-300">Privacy Policy</a>
