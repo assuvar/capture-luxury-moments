@@ -12,11 +12,11 @@ const EnhancedUpcomingEvents = ({ onBookNowClick }: EnhancedUpcomingEventsProps)
     {
       id: 1,
       title: " Dr. A.R. Sivanandhini, MBBS & Er.M.Ram, B.Tech",
-      location: "Vellore Palace Resort",
+      location: "NJ MAHAL and Residency Address No 262, Trichy Main Road, Thavuthalaikulam, Min Nagar-621704",
       date: "July 13, 2025",
       time: "11:30 AM",
       type: "Wedding",
-      image: "https://i.postimg.cc/1tZLG8DR/Whats-App-Image-2025-07-10-at-12-00-58-fa55ae05.jpg://i.postimg.cc/L6T6npKZ/Whats-App-Image-2025-07-10-at-12-00-58-e58ae1d4.jpg",
+      image: "https://i.postimg.cc/XqTv5XRg/370-A0867-1.jpg",
       status: "Confirmed",
       description: "A grand celebration of love in the heart of Vellore"
     },

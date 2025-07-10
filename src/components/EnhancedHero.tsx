@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
+import bgm from '/src/assets/bgm.mp3';
 
 const EnhancedHero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -26,7 +27,7 @@ const EnhancedHero = () => {
 
   useEffect(() => {
     // ✅ Correct audio path - file must be in /public/sounds/
-    audioRef.current = new Audio('/src/assets/bgm.mp3');
+    audioRef.current = new Audio(bgm);
     audioRef.current.load();
   }, []);
 

@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import logo from '/src/assets/logo.png';
-
+import bgm from '/src/assets/bgm.mp3';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,7 +15,14 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    // Initialize the audio
+    audioRef.current = new Audio(bgm);
+    audioRef.current.loop = true;
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const navItems = [
@@ -35,7 +43,16 @@ const Navbar = () => {
   };
 
   const handleBookNowClick = () => {
-    const phoneNumber = '919585966522'; // Replace with your WhatsApp number (no + or spaces)
+    // Play music
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play().catch((err) => {
+        console.warn('Autoplay failed:', err);
+      });
+    }
+
+    // Open WhatsApp
+    const phoneNumber = '919585966522';
     const message = encodeURIComponent('Hi! I would like to book a session with Maha Captures.');
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
@@ -54,7 +71,7 @@ const Navbar = () => {
           {/* Logo with Image */}
           <div className="flex-shrink-0 flex items-center space-x-2">
             <img
-              src={logo} // Make sure this path is correct; use public/logo.png for Next.js or Vite
+              src={logo}
               alt="Maha Captures Logo"
               className="h-20 w-75"
             />
@@ -122,30 +139,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
