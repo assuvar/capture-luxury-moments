@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 
 const EnhancedHero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isLoaded, setIsLoaded] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 300);
@@ -23,6 +24,12 @@ const EnhancedHero = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
+  useEffect(() => {
+    // ✅ Correct audio path - file must be in /public/sounds/
+    audioRef.current = new Audio('/src/assests/bgm.mp3');
+    audioRef.current.load();
+  }, []);
+
   const scrollToSection = (id: string) => {
     const target = document.getElementById(id);
     if (target) {
@@ -30,7 +37,14 @@ const EnhancedHero = () => {
     }
   };
 
-  const openWhatsApp = () => {
+  const playSoundAndOpenWhatsApp = () => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play().catch((err) => {
+        console.warn('Audio failed to play:', err);
+      });
+    }
+
     const message = encodeURIComponent(
       "Hi MahaCaptures, I'm interested in booking a photography session. Please share more details."
     );
@@ -39,28 +53,28 @@ const EnhancedHero = () => {
 
   const floatingImages = [
     {
-      src: "https://i.postimg.cc/gcTH9KXk/post.jpg",
-      className: "top-20 left-10 w-48 h-64",
+      src: 'https://i.postimg.cc/gcTH9KXk/post.jpg',
+      className: 'top-20 left-10 w-48 h-64',
       delay: 0,
     },
     {
-      src: "https://i.postimg.cc/yN7KDdcW/5Q3A3401.jpg",
-      className: "top-32 right-16 w-40 h-56",
+      src: 'https://i.postimg.cc/yN7KDdcW/5Q3A3401.jpg',
+      className: 'top-32 right-16 w-40 h-56',
       delay: 200,
     },
     {
-      src: "https://i.postimg.cc/4d77Kmbp/5Q3A5401.jpg",
-      className: "bottom-40 left-20 w-44 h-60",
+      src: 'https://i.postimg.cc/4d77Kmbp/5Q3A5401.jpg',
+      className: 'bottom-40 left-20 w-44 h-60',
       delay: 400,
     },
     {
-      src: "https://i.postimg.cc/Dz4Ny3Ym/5Q3A8831.jpg",
-      className: "bottom-20 right-10 w-52 h-68",
+      src: 'https://i.postimg.cc/Dz4Ny3Ym/5Q3A8831.jpg',
+      className: 'bottom-20 right-10 w-52 h-68',
       delay: 600,
     },
     {
-      src: "https://i.postimg.cc/8k4ZGCPt/370A3945.jpg",
-      className: "top-1/2 left-1/4 w-36 h-48",
+      src: 'https://i.postimg.cc/8k4ZGCPt/370A3945.jpg',
+      className: 'top-1/2 left-1/4 w-36 h-48',
       delay: 800,
     },
   ];
@@ -123,7 +137,7 @@ const EnhancedHero = () => {
         >
           <Button
             size="lg"
-            onClick={openWhatsApp}
+            onClick={playSoundAndOpenWhatsApp}
             className="bg-primary hover:bg-primary/90 text-white px-12 py-6 text-xl rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/25"
           >
             Book via WhatsApp

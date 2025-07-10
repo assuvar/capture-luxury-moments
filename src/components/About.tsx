@@ -17,7 +17,7 @@ const About = () => {
                 src={aboutVideo}
                 autoPlay
                 loop
-               controls
+               
                muted
                 playsInline
                 className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl"

@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { MessageCircle, X, Send } from 'lucide-react';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
@@ -19,6 +18,8 @@ const WhatsAppFloat = () => {
     message: ''
   });
 
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({
       ...prev,
@@ -28,7 +29,7 @@ const WhatsAppFloat = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const whatsappMessage = `Hi MahaCaptures, I'm interested in booking a photography session.
 
 📝 Details:
@@ -44,7 +45,7 @@ Please share more details and package options. Thank you!`;
 
     const encodedMessage = encodeURIComponent(whatsappMessage);
     window.open(`https://wa.me/+919876543210?text=${encodedMessage}`, '_blank');
-    
+
     // Reset form and close modal
     setFormData({
       name: '',
@@ -59,11 +60,32 @@ Please share more details and package options. Thank you!`;
 
   const quickWhatsApp = () => {
     const message = encodeURIComponent("Hi MahaCaptures, I'm interested in your photography services. Please share more details.");
-   window.open(`https://wa.me/+919585966522?text=${message}`, '_blank');
+    window.open(`https://wa.me/+919585966522?text=${message}`, '_blank');
+  };
+
+  const handleBookNow = () => {
+    // Play the 20-second audio
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play();
+
+      setTimeout(() => {
+        if (audioRef.current) {
+          audioRef.current.pause();
+          audioRef.current.currentTime = 0;
+        }
+      }, 20000); // Stop after 20 seconds
+    }
+
+    // Open the booking modal
+    setIsOpen(true);
   };
 
   return (
     <>
+      {/* Hidden audio element */}
+      <audio ref={audioRef} src="/src/assets/bgm.mp3" preload="auto" />
+
       {/* Floating WhatsApp Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <div className="flex flex-col items-end space-y-3">
@@ -77,10 +99,10 @@ Please share more details and package options. Thank you!`;
           >
             <MessageCircle className="w-5 h-5" />
           </Button>
-          
+
           {/* Detailed form button */}
           <Button
-            onClick={() => setIsOpen(true)}
+            onClick={handleBookNow}
             className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 hover:scale-105 text-sm"
             data-aos="fade-up"
             data-aos-delay="300"
@@ -99,7 +121,7 @@ Please share more details and package options. Thank you!`;
               Fill out the form below to send your booking details directly to MahaCaptures via WhatsApp
             </DialogDescription>
           </VisuallyHidden>
-          
+
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center">
               <div className="bg-green-500 p-2 rounded-full mr-3">

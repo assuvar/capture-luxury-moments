@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Camera, Clock, Users, Palette, Sparkles } from 'lucide-react';
 
-interface EnhancedPackagesProps {
-  onBookNowClick: (packageTitle: string, price: string) => void;
-}
+const EnhancedPackages = () => {
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
-const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
+  useEffect(() => {
+    // ✅ Correct path - make sure the file is in public/src/assets
+    audioRef.current = new Audio('/src/assests/bgm.mp3');
+    audioRef.current.load();
+  }, []);
+
+  const handleBookNowClick = (packageTitle: string, price: string) => {
+    // 🔊 Play the audio if loaded
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play().catch((err) => {
+        console.warn('Audio failed to play:', err);
+      });
+    }
+
+    const message = encodeURIComponent(
+      `Hi MahaCaptures, I'm interested in the ${packageTitle} package priced at ${price}. Please share more details.`
+    );
+    window.open(`https://wa.me/919585966522?text=${message}`, '_blank');
+  };
+
   const packages = [
     {
       title: "Standard",
@@ -79,35 +98,23 @@ const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
     <section id="packages" className="py-24 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2
-            className="text-5xl md:text-6xl font-thin mb-6 text-white"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
+          <h2 className="text-5xl md:text-6xl font-thin mb-6 text-white">
             Choose Your <span className="text-gradient">Experience</span>
           </h2>
-          <p
-            className="text-xl text-white/70 max-w-3xl mx-auto font-light"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
+          <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">
             From intimate moments to grand celebrations, we have the perfect package to capture your story with unparalleled elegance.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {packages.map((pkg, index) => {
-            const IconComponent = pkg.icon;
+            const Icon = pkg.icon;
             return (
               <Card
                 key={pkg.title}
                 className={`relative bg-gradient-to-b ${pkg.gradient} to-black border-gray-800 hover:border-primary/50 transition-all duration-500 group hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 ${
                   pkg.popular ? 'scale-105 border-primary/30 shadow-xl shadow-primary/10' : ''
                 }`}
-                data-aos="fade-up"
-                data-aos-delay={index * 150}
-                data-aos-duration="800"
               >
                 {pkg.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
@@ -120,7 +127,7 @@ const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
                 <CardContent className="p-8 h-full flex flex-col">
                   <div className="text-center mb-8">
                     <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-6 group-hover:bg-primary/20 transition-colors duration-300">
-                      <IconComponent className="w-10 h-10 text-primary group-hover:scale-110 transition-transform duration-300" />
+                      <Icon className="w-10 h-10 text-primary group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <h3 className="text-3xl font-semibold text-white mb-3 group-hover:text-gradient transition-all duration-300">
                       {pkg.title}
@@ -128,17 +135,12 @@ const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
                     <div className="text-5xl font-bold text-gradient mb-3">{pkg.price}</div>
                     <div className="flex items-center justify-center text-white/70">
                       <Clock className="w-5 h-5 mr-2" />
-                      {/* Optional: delivery timeline */}
                     </div>
                   </div>
 
                   <div className="space-y-4 mb-8 flex-grow">
-                    {pkg.features.map((feature, featureIndex) => (
-                      <div
-                        key={featureIndex}
-                        className="flex items-center opacity-0 animate-fade-in"
-                        style={{ animationDelay: `${index * 150 + featureIndex * 100}ms` }}
-                      >
+                    {pkg.features.map((feature, i) => (
+                      <div key={i} className="flex items-center">
                         <Check className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
                         <span className="text-white/90">{feature}</span>
                       </div>
@@ -151,7 +153,7 @@ const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
                         ? 'bg-primary hover:bg-primary/90 text-white hover:shadow-lg hover:shadow-primary/25'
                         : 'bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:border-primary/50'
                     }`}
-                    onClick={() => onBookNowClick(pkg.title, pkg.price)}
+                    onClick={() => handleBookNowClick(pkg.title, pkg.price)}
                   >
                     Book via WhatsApp
                   </Button>
@@ -161,12 +163,19 @@ const EnhancedPackages = ({ onBookNowClick }: EnhancedPackagesProps) => {
           })}
         </div>
 
-        <div className="text-center mt-16" data-aos="fade-up" data-aos-delay="600">
+        <div className="text-center mt-16">
           <p className="text-white/60 mb-6 text-lg">Need a custom package tailored to your vision?</p>
           <Button
             variant="outline"
             className="border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:border-primary/50 text-lg"
             onClick={() => {
+              if (audioRef.current) {
+                audioRef.current.currentTime = 0;
+                audioRef.current.play().catch((err) => {
+                  console.warn('Audio failed to play:', err);
+                });
+              }
+
               const message = encodeURIComponent(
                 "Hi MahaCaptures, I need a custom photography package. Can we discuss my requirements?"
               );
