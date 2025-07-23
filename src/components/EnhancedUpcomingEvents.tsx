@@ -13,7 +13,7 @@ const EnhancedUpcomingEvents = ({ onBookNowClick }: EnhancedUpcomingEventsProps)
       id: 1,
       title: " Dr. A.R. Sivanandhini, MBBS & Er.M.Ram, B.Tech",
       location: "NJ MAHAL and Residency Address No 262, Trichy Main Road, Thavuthalaikulam, Min Nagar-621704",
-      date: "July 13, 2025",
+      date: "August 28 , 2025",
       time: "11:30 AM",
       type: "Wedding",
       image: "https://i.postimg.cc/XqTv5XRg/370-A0867-1.jpg",
