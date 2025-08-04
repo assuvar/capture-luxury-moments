@@ -101,7 +101,43 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
         'https://i.postimg.cc/jSN8PqcY/370A5670.jpg',
         'https://i.postimg.cc/HxW3qwgT/370A5771.jpg'
       ]
-    }
+    },
+    {
+      id: 7,
+      title: 'Kanna Gayu',
+      date: '',
+      category: 'Pre Wed',
+      heroImage: 'https://i.postimg.cc/B6MCfg4z/IMG-1411.jpg',
+      images: [
+        'https://i.ibb.co/zT0rXvvY/IMG-1416.jpg',
+        'https://i.ibb.co/twBdCCnQ/IMG-1443.jpg',
+        'https://i.postimg.cc/B6MCfg4z/IMG-1411.jpg'
+      ]
+    },
+    {
+      id: 8,
+      title: 'Ram & Priya',
+      date: '',
+      category: 'Marriage',
+      heroImage: 'https://i.postimg.cc/sxW48ZDQ/5Q3A2093.jpg',
+      images: [
+        'https://i.postimg.cc/pXT2DYrL/5Q3A2409.jpg',
+        'https://i.postimg.cc/TP8fMz9K/5Q3A2106.jpg',
+        'https://i.postimg.cc/wjNYVWpg/370A1366.jpg'
+      ]
+    },
+    {
+      id: 9,
+      title: 'Sivashankari & Barathi',
+      date: '',
+      category: 'Pre Wed',
+      heroImage: 'https://i.postimg.cc/3JtJ0fZR/5Q3A5819.jpg',
+      images: [
+        'https://i.postimg.cc/RZx4jrGN/5Q3A5825.jpg',
+        'https://i.postimg.cc/28DB7tv7/5Q3A5929.jpg',
+        'https://i.postimg.cc/Jzt7N3TQ/5Q3A5813.jpg'
+      ]
+    },
   ];
 
 const videoClips: VideoItem[] = [
