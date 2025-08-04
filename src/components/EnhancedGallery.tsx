@@ -138,6 +138,42 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
         'https://i.postimg.cc/Jzt7N3TQ/5Q3A5813.jpg'
       ]
     },
+    {
+      id: 10,
+      title: 'Swathi & madhan',
+      date: '',
+      category: 'Engagement',
+      heroImage: 'https://i.postimg.cc/tRwbL84q/IMG-6805.jpg',
+      images: [
+        'https://i.postimg.cc/Ls9FtpNT/1C8A8308.jpg',
+        'https://i.postimg.cc/m27rVTyf/1C8A8311.jpg',
+        'https://i.postimg.cc/J0nhPXxp/1C8A8304.jpg'
+      ]
+    },
+     {
+      id: 11,
+      title: 'Vicky & Deepika',
+      date: '',
+      category: 'Engagement',
+      heroImage: 'https://i.postimg.cc/8C3YcJXq/1C8A4727.jpg',
+      images: [
+        'https://i.postimg.cc/zDhsL7rp/1C8A4647.jpg',
+        'https://i.postimg.cc/pdGHZLGZ/1C8A4753.jpg',
+        'https://i.ibb.co/XZB2vR5m/1-C8-A4686-1.jpg'
+      ]
+    },
+    {
+      id: 12,
+      title: 'Sathish & Priya',
+      date: '',
+      category: 'Marriage',
+      heroImage: 'https://i.postimg.cc/TYLp5ZPF/096A1526.jpg',
+      images: [
+        'https://i.postimg.cc/W35h0VgL/096A1292.jpg',
+        'https://i.postimg.cc/jjrwbZt9/370A0454.jpg',
+        'https://i.postimg.cc/Kjs3hb8r/096A1279.jpg'
+      ]
+    },
   ];
 
 const videoClips: VideoItem[] = [
