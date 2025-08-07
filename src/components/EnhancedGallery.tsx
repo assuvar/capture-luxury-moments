@@ -80,18 +80,6 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
     },
     {
       id: 5,
-      title: 'Kanishkha',
-      date: '',
-      category: 'Puberty',
-      heroImage: 'https://i.postimg.cc/Dz4Ny3Ym/5Q3A8831.jpg',
-      images: [
-        'https://i.postimg.cc/HkJzHYR7/5Q3A8868.jpg',
-        'https://i.postimg.cc/nh8jjnMm/5Q3A8872.jpg',
-        'https://i.postimg.cc/Ls2JDvt6/5Q3A8857.jpg'
-      ]
-    },
-    {
-      id: 6,
       title: 'Vicky & Deepika',
       date: '',
       category: 'Pre Wed',
@@ -103,7 +91,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
     {
-      id: 7,
+      id: 6,
       title: 'Kanna Gayu',
       date: '',
       category: 'Pre Wed',
@@ -115,7 +103,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
     {
-      id: 8,
+      id: 7,
       title: 'Ram & Priya',
       date: '',
       category: 'Marriage',
@@ -127,7 +115,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
     {
-      id: 9,
+      id: 8,
       title: 'Sivashankari & Barathi',
       date: '',
       category: 'Pre Wed',
@@ -139,7 +127,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
     {
-      id: 10,
+      id: 9,
       title: 'Swathi & madhan',
       date: '',
       category: 'Engagement',
@@ -151,7 +139,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
      {
-      id: 11,
+      id: 10,
       title: 'Vicky & Deepika',
       date: '',
       category: 'Engagement',
@@ -163,7 +151,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
     {
-      id: 12,
+      id: 11,
       title: 'Sathish & Priya',
       date: '',
       category: 'Marriage',
