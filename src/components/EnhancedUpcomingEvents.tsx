@@ -12,7 +12,7 @@ const EnhancedUpcomingEvents = ({ onBookNowClick }: EnhancedUpcomingEventsProps)
     {
       id: 1,
       title: "Asvika Birthday Celebration",
-      location: "Ramanishankar Mandapam, Vellore",
+      location: "Shree harishwar",
       date: "August 26, 2025",
       time: "6:00 PM",
       type: "Birthday",
