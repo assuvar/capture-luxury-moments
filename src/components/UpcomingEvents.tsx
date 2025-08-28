@@ -7,6 +7,26 @@ const UpcomingEvents = () => {
   const events = [
     {
       id: 1,
+      title: "Asvika Birthday Celebration",
+      location: "Shree harishwar",
+      date: "August 26, 2025",
+      time: "6:00 PM",
+      type: "Birthday",
+      image: "https://i.postimg.cc/qRSMcBNt/Whats-App-Image-2025-08-27-at-14-47-59-c8529d84.jpg",
+      status: "Confirmed"
+    },
+    {
+      id: 2,
+      title: "Murali & Mythili Wedding",
+      location: "Ramanishankar Mandapam, Vellore",
+      date: "August 28, 2025",
+      time: "10:00 AM",
+      type: "Wedding",
+      image: "https://i.postimg.cc/wxRBqNrD/Whats-App-Image-2025-08-27-at-14-50-58-5806ca4f.jpg",
+      status: "Confirmed"
+    },
+    {
+      id: 3,
       title: "Luxury Wedding - Meenakshi & Arun",
       location: "Vellore Palace Resort",
       date: "January 15, 2025",
@@ -16,7 +36,7 @@ const UpcomingEvents = () => {
       status: "Confirmed"
     },
     {
-      id: 2,
+      id: 4,
       title: "Corporate Annual Meet - Infosys",
       location: "Bangalore Convention Center",
       date: "January 22, 2025",
@@ -26,7 +46,7 @@ const UpcomingEvents = () => {
       status: "Confirmed"
     },
     {
-      id: 3,
+      id: 5,
       title: "Fashion Week Portfolio Shoot",
       location: "Studio Bangalore",
       date: "February 5, 2025",
@@ -36,7 +56,7 @@ const UpcomingEvents = () => {
       status: "Open"
     },
     {
-      id: 4,
+      id: 6,
       title: "Birthday Celebration - Aditi",
       location: "Vellore Garden Resort",
       date: "February 12, 2025",
@@ -46,7 +66,7 @@ const UpcomingEvents = () => {
       status: "Open"
     },
     {
-      id: 5,
+      id: 7,
       title: "Engagement Shoot - Sneha & Karthik",
       location: "Lalbagh Botanical Garden",
       date: "February 20, 2025",
