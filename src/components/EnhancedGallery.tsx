@@ -80,18 +80,6 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
     },
     {
       id: 5,
-      title: 'Kanishkha',
-      date: '',
-      category: 'Puberty',
-      heroImage: 'https://i.postimg.cc/Dz4Ny3Ym/5Q3A8831.jpg',
-      images: [
-        'https://i.postimg.cc/HkJzHYR7/5Q3A8868.jpg',
-        'https://i.postimg.cc/nh8jjnMm/5Q3A8872.jpg',
-        'https://i.postimg.cc/Ls2JDvt6/5Q3A8857.jpg'
-      ]
-    },
-    {
-      id: 6,
       title: 'Vicky & Deepika',
       date: '',
       category: 'Pre Wed',
@@ -101,7 +89,79 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
         'https://i.postimg.cc/jSN8PqcY/370A5670.jpg',
         'https://i.postimg.cc/HxW3qwgT/370A5771.jpg'
       ]
-    }
+    },
+    {
+      id: 6,
+      title: 'Kanna Gayu',
+      date: '',
+      category: 'Pre Wed',
+      heroImage: 'https://i.postimg.cc/B6MCfg4z/IMG-1411.jpg',
+      images: [
+        'https://i.ibb.co/zT0rXvvY/IMG-1416.jpg',
+        'https://i.ibb.co/twBdCCnQ/IMG-1443.jpg',
+        'https://i.postimg.cc/B6MCfg4z/IMG-1411.jpg'
+      ]
+    },
+    {
+      id: 7,
+      title: 'Ram & Priya',
+      date: '',
+      category: 'Marriage',
+      heroImage: 'https://i.postimg.cc/sxW48ZDQ/5Q3A2093.jpg',
+      images: [
+        'https://i.postimg.cc/pXT2DYrL/5Q3A2409.jpg',
+        'https://i.postimg.cc/TP8fMz9K/5Q3A2106.jpg',
+        'https://i.postimg.cc/wjNYVWpg/370A1366.jpg'
+      ]
+    },
+    {
+      id: 8,
+      title: 'Sivashankari & Barathi',
+      date: '',
+      category: 'Pre Wed',
+      heroImage: 'https://i.postimg.cc/3JtJ0fZR/5Q3A5819.jpg',
+      images: [
+        'https://i.postimg.cc/RZx4jrGN/5Q3A5825.jpg',
+        'https://i.postimg.cc/28DB7tv7/5Q3A5929.jpg',
+        'https://i.postimg.cc/Jzt7N3TQ/5Q3A5813.jpg'
+      ]
+    },
+    {
+      id: 9,
+      title: 'Swathi & madhan',
+      date: '',
+      category: 'Engagement',
+      heroImage: 'https://i.postimg.cc/tRwbL84q/IMG-6805.jpg',
+      images: [
+        'https://i.postimg.cc/Ls9FtpNT/1C8A8308.jpg',
+        'https://i.postimg.cc/m27rVTyf/1C8A8311.jpg',
+        'https://i.postimg.cc/J0nhPXxp/1C8A8304.jpg'
+      ]
+    },
+     {
+      id: 10,
+      title: 'Vicky & Deepika',
+      date: '',
+      category: 'Engagement',
+      heroImage: 'https://i.postimg.cc/8C3YcJXq/1C8A4727.jpg',
+      images: [
+        'https://i.postimg.cc/zDhsL7rp/1C8A4647.jpg',
+        'https://i.postimg.cc/pdGHZLGZ/1C8A4753.jpg',
+        'https://i.ibb.co/XZB2vR5m/1-C8-A4686-1.jpg'
+      ]
+    },
+    {
+      id: 11,
+      title: 'Sathish & Priya',
+      date: '',
+      category: 'Marriage',
+      heroImage: 'https://i.postimg.cc/TYLp5ZPF/096A1526.jpg',
+      images: [
+        'https://i.postimg.cc/W35h0VgL/096A1292.jpg',
+        'https://i.postimg.cc/jjrwbZt9/370A0454.jpg',
+        'https://i.postimg.cc/Kjs3hb8r/096A1279.jpg'
+      ]
+    },
   ];
 
 const videoClips: VideoItem[] = [
