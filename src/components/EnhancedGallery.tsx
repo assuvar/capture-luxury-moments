@@ -162,6 +162,18 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
         'https://i.postimg.cc/Kjs3hb8r/096A1279.jpg'
       ]
     },
+    {
+      id: 12,
+      title: 'YASHU',
+      date: '',
+      category: 'OUTDOOR',
+      heroImage: 'https://i.postimg.cc/wTvNcFS2/5Q3A6283.jpg',
+      images: [
+        'https://i.postimg.cc/W35h0VgL/096A1292.jpg',
+        'https://i.postimg.cc/jjrwbZt9/370A0454.jpg',
+        'https://i.postimg.cc/Kjs3hb8r/096A1279.jpg'
+      ]
+    },
   ];
 
 const videoClips: VideoItem[] = [
