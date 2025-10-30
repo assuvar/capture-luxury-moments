@@ -174,6 +174,23 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
         'https://i.postimg.cc/Kjs3hb8r/096A1279.jpg'
       ]
     },
+     {
+      id: 13,
+      title: 'MADHU & SWATHI WEDDING',
+      date: '',
+      category: 'OUTDOOR',
+      heroImage: 'https://i.postimg.cc/tCQssVvy/5Q3A0614.jpg,',
+      images: [
+        
+        'https://i.postimg.cc/3x3VJngD/370A5989.jpg',
+        'https://i.postimg.cc/1tR3GGh0/370A6056.jpg ,
+        'https://i.postimg.cc/Kvppxxv9/370A6086.jpg ,
+        'https://i.postimg.cc/bv5t3Y8C/370A6140.jpg,
+        'https://i.postimg.cc/tCD7BRNV/370A6149.jpg
+        
+        '
+      ]
+    },
   ];
 
 const videoClips: VideoItem[] = [
