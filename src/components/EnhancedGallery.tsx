@@ -188,6 +188,25 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
         'https://i.postimg.cc/tCD7BRNV/370A6149.jpg'
       ]
     },
+        {
+      id: 14,
+      title: 'Anto & Shalini',
+      date: '',
+      category: 'PRE WEDDING',
+      heroImage: 'https://i.postimg.cc/sx6v8mg9/003_n.jpg',
+      images: [
+        'https://i.postimg.cc/MK9720Lf/001-n.jpg',
+        'https://i.postimg.cc/QtqBghGV/002_n.jpg',
+        'https://i.postimg.cc/sx6v8mg9/003_n.jpg',
+        'https://i.postimg.cc/2y812Mrh/004_n.jpg',
+        'https://i.postimg.cc/cC4vX20t/005_n.jpg',
+        'https://i.postimg.cc/yxYDvtsT/007_n.jpg',
+        'https://i.postimg.cc/908rSbfX/IMG_2350.jpg',
+        'https://i.postimg.cc/XqHphLvb/IMG_2351.jpg',
+        'https://i.postimg.cc/WzWhK84j/IMG_2352.jpg',
+        'https://i.postimg.cc/h4pzfD1r/IMG_2354.jpg'
+      ]
+    },
   ];
 
 const videoClips: VideoItem[] = [
