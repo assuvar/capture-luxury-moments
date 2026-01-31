@@ -44,18 +44,6 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
     },
     {
       id: 2,
-      title: 'Ezhil & Tamil',
-      date: '',
-      category: 'Reception',
-      heroImage: 'https://i.postimg.cc/xCTN96qp/IMG-6513-1.jpg',
-      images: [
-        'https://i.postimg.cc/fRRjLm5J/IMG-6392.jpg',
-        'https://i.postimg.cc/y82gHZGq/IMG-6442.jpg',
-        'https://i.postimg.cc/vHqx0jLZ/IMG-6401.jpg'
-      ]
-    },
-    {
-      id: 3,
       title: 'Kannadhasan & Gayathri',
       date: '',
       category: 'Reception',
@@ -67,19 +55,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
     {
-      id: 4,
-      title: '',
-      date: '',
-      category: 'Model Potraits',
-      heroImage: 'https://i.postimg.cc/vH4JPKWY/IMG-6014.jpg',
-      images: [
-        'https://i.postimg.cc/mr2fZF3g/IMG-6033.jpg',
-        'https://i.postimg.cc/3xy4WdKY/IMG-6006-Recovered.jpg',
-        'https://i.postimg.cc/3NRr6cNY/IMG-5885.jpg'
-      ]
-    },
-    {
-      id: 5,
+      id: 3,
       title: 'Vicky & Deepika',
       date: '',
       category: 'Pre Wed',
@@ -91,19 +67,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
     {
-      id: 6,
-      title: 'Kanna Gayu',
-      date: '',
-      category: 'Pre Wed',
-      heroImage: 'https://i.postimg.cc/B6MCfg4z/IMG-1411.jpg',
-      images: [
-        'https://i.ibb.co/zT0rXvvY/IMG-1416.jpg',
-        'https://i.ibb.co/twBdCCnQ/IMG-1443.jpg',
-        'https://i.postimg.cc/B6MCfg4z/IMG-1411.jpg'
-      ]
-    },
-    {
-      id: 7,
+      id: 4,
       title: 'Ram & Priya',
       date: '',
       category: 'Marriage',
@@ -115,19 +79,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
     {
-      id: 8,
-      title: 'Sivashankari & Barathi',
-      date: '',
-      category: 'Pre Wed',
-      heroImage: 'https://i.postimg.cc/3JtJ0fZR/5Q3A5819.jpg',
-      images: [
-        'https://i.postimg.cc/RZx4jrGN/5Q3A5825.jpg',
-        'https://i.postimg.cc/28DB7tv7/5Q3A5929.jpg',
-        'https://i.postimg.cc/Jzt7N3TQ/5Q3A5813.jpg'
-      ]
-    },
-    {
-      id: 9,
+      id: 5,
       title: 'Swathi & madhan',
       date: '',
       category: 'Engagement',
@@ -139,7 +91,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
      {
-      id: 10,
+      id: 6,
       title: 'Vicky & Deepika',
       date: '',
       category: 'Engagement',
@@ -151,31 +103,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
     {
-      id: 11,
-      title: 'Sathish & Priya',
-      date: '',
-      category: 'Marriage',
-      heroImage: 'https://i.postimg.cc/TYLp5ZPF/096A1526.jpg',
-      images: [
-        'https://i.postimg.cc/W35h0VgL/096A1292.jpg',
-        'https://i.postimg.cc/jjrwbZt9/370A0454.jpg',
-        'https://i.postimg.cc/Kjs3hb8r/096A1279.jpg'
-      ]
-    },
-    {
-      id: 12,
-      title: 'YASHU',
-      date: '',
-      category: 'OUTDOOR',
-      heroImage: 'https://i.postimg.cc/wTvNcFS2/5Q3A6283.jpg',
-      images: [
-        'https://i.postimg.cc/W35h0VgL/096A1292.jpg',
-        'https://i.postimg.cc/jjrwbZt9/370A0454.jpg',
-        'https://i.postimg.cc/Kjs3hb8r/096A1279.jpg'
-      ]
-    },
-    {
-      id: 13,
+      id: 7,
       title: 'MADHU & SWATHI WEDDING',
       date: '',
       category: 'OUTDOOR',
@@ -189,7 +117,7 @@ const EnhancedGallery = ({ onBookNowClick }: EnhancedGalleryProps) => {
       ]
     },
         {
-      id: 14,
+      id: 8,
       title: 'Anto & Shalini',
       date: '',
       category: 'PRE WEDDING',
