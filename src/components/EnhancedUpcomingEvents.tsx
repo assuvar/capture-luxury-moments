@@ -9,39 +9,6 @@ interface EnhancedUpcomingEventsProps {
 
 const EnhancedUpcomingEvents = ({ onBookNowClick }: EnhancedUpcomingEventsProps) => {
   const events = [
-    {
-      id: 1,
-      title: "Asvika Birthday Celebration",
-      location: "Shree harishwar",
-      date: "August 26, 2025",
-      time: "6:00 PM",
-      type: "Birthday",
-      image: "https://i.postimg.cc/qRSMcBNt/Whats-App-Image-2025-08-27-at-14-47-59-c8529d84.jpg",
-      status: "Confirmed",
-      description: "A special birthday celebration for little Asvika in her beautiful pink dress"
-    },
-    {
-      id: 2,
-      title: "Murali & Mythili Wedding",
-      location: "Ramanishankar Mandapam, Vellore",
-      date: "August 28, 2025",
-      time: "10:00 AM",
-      type: "Wedding",
-      image: "https://i.postimg.cc/wxRBqNrD/Whats-App-Image-2025-08-27-at-14-50-58-5806ca4f.jpg",
-      status: "Confirmed",
-      description: "A grand celebration of love in the heart of Vellore"
-    },
-    {
-      id: 3,
-      title: " Dr. A.R. Sivanandhini, MBBS & Er.M.Ram, B.Tech",
-      location: "NJ MAHAL and Residency Address No 262, Trichy Main Road, Thavuthalaikulam, Min Nagar-621704",
-      date: "August 28 , 2025",
-      time: "11:30 AM",
-      type: "Wedding",
-      image: "https://i.postimg.cc/XqTv5XRg/370-A0867-1.jpg",
-      status: "Confirmed",
-      description: "A grand celebration of love in the heart of Vellore"
-    },
   
   ];
 
